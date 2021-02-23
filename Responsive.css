@@ -1,0 +1,568 @@
+/* mobile menu css */
+
+.menu{
+    position: relative;
+}
+.mobile-checkbox{
+    position: relative;
+    top: -7px;
+    left: 27px;
+    z-index:3;
+    display: none;
+    opacity: 0;
+    cursor: pointer;
+}
+.mobile-bars{
+    font-size: 30px;
+    color:rgb(142, 93, 175);
+    position: absolute;
+    left:20px;
+    bottom: 0;
+    z-index:-1;
+    opacity:0;
+    visibility: hidden;
+}
+.mobile-cross {
+    font-size: 45px;
+    color: rgb(142, 93, 175);
+    position: absolute;
+    left: 32px;
+    bottom: -2px;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+/* Start Responsive css */
+
+@media (max-width:1132px) {
+    .menu ul {
+        margin-right: 0;
+    }
+    .menu ul li a {
+        font-size: 12px;
+    }
+    .video-div iframe{
+        height:220px;
+    }
+    .about-right h4 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .about-right p {
+        font-size: 13px;
+        margin-top: 20px;
+        line-height: 23px;
+    }
+    .service h6 {
+        font-size: 20px;
+    }
+    .service p {
+        font-size: 13px;
+    }
+    .blog-data b {
+        font-size: 20px;
+    }
+    .blog-data p {
+        font-size: 15px;
+    }
+    .tc-comment p {
+        font-size: 13px;
+        line-height: 20px;
+        padding: 10px;
+    }
+    .imgdiv-user .img-user {
+        width: 50px;
+    }
+    .user-data span {
+        font-size: 12px;
+        margin-top: 3px;
+    }
+    .user-data b {
+        font-size: 13px;
+    }
+    .i-np1 {
+        width: 93%;
+    }
+    .i-np2 {
+        width: 93%;
+    }
+}
+
+@media (max-width:1060px) {
+    .video-div iframe{
+        height:200px;
+    }
+    .logo a {
+        font-size: 15px;
+    }
+    .service-div {
+        width: 30%;
+    }
+    .using-top .p1 {
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    .using-top .b1 {
+        font-size: 30px;
+    }
+    .using-top .p3 {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .using-bottom {
+        padding: 15px;
+    }
+    .using-bottom li {
+        font-size: 13px;
+        margin-top: 0;
+    }
+    .team-mamber {
+        width: 30%;
+    }
+    .team-mamber img {
+        width: 100%;
+    }
+    .contect-r p {
+        line-height: 22px;
+        margin-top: 5px;
+        font-size: 14px;
+    }
+    .tc-comment .p-icon {
+        position: absolute;
+        bottom: -28px;
+    }
+}
+
+@media (max-width:940px) {
+    header{
+        box-shadow: none;
+        position: relative;
+    }
+    .logo {
+        width: 100%;
+        text-align: center;
+        margin-left:0;
+        padding-bottom: 15px;
+    }
+    .logo a {
+        font-size: 18px;
+    }
+    .menu{
+        width: 60%;
+        position: relative;
+        text-align: left;
+    }
+    .mobile-bars{
+        position: absolute;
+        left: 20px;
+        bottom: -4px;
+        visibility: visible;
+        opacity: 1;
+    }
+    .mobile-cross {
+        position: absolute;
+        left: 26px;
+        bottom: 2px;
+    }
+    .batton {
+        width: 40%;
+        margin-right:0;
+        padding-top: 10px;
+    }
+    .batton a {
+        margin-right: 20px;
+    }
+    .banner{
+        margin-top: 87px;
+    }
+    .video-div iframe{
+        height:420px;
+    }
+    .about-right h4 {
+        font-size: 25px;
+    }
+    .about-right p {
+        font-size: 15px;
+        margin-top: 15px;
+        line-height: 28px;
+    }
+    .about-content {
+        display: block;
+    }
+    .about-left {
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+    }
+    .about-right {
+        width: 100%;
+        margin-top: 40px;
+    }
+    .section-header h4 {
+        font-size: 20px;
+    }
+    .service-div {
+        width: 35%;
+    }
+    .using {
+        width: 85%;
+    }
+    .using-top {
+        padding: 20px 50px;
+    }
+    .using-bottom {
+        padding: 15px 50px;
+    }
+    .row1 {
+        display: block;
+    }
+    .row1-l {
+        padding-bottom: 0px;
+    }
+    .row1-r {
+        width: 100%;
+        padding-bottom: 10px;
+        padding-left: 0;
+    }
+    .blog {
+        display: block;
+    }
+    .blog img {
+        max-width: 100%;
+    }
+    .blog-data {
+        width: 100%;
+    }
+    .tc-div {
+        width: 70%;
+    }
+    .tc-comment p {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 12px;
+    }
+    .contect-r b {
+        font-size: 20px;
+    }
+    .contect-r p {
+        font-size: 14px;
+    }
+
+    /* mobile menu items */
+
+    .menu .mobile-checkbox:checked ~ .mobile-bars{
+        opacity:0;
+        visibility:hidden;
+        height:0;
+    }
+    .menu .mobile-checkbox:checked ~ .mobile-cross{
+        opacity:1;
+        visibility:visible;
+        height:100%;
+    }
+
+    .menu .mobile-checkbox:checked ~ .frist-ul{
+        opacity:1;
+        visibility:visible;
+        height:100%;
+    }
+    .mobile-checkbox{
+        display: block;
+    }
+    .frist-ul{
+        margin-right: 0;
+        opacity: 0;
+        visibility: hidden;
+        height:100%;
+        width: 100%;
+        position: absolute;
+        top: 46px;
+        left: 0;
+        background-color: white;
+        padding-bottom: 140px;
+    }
+    .menu ul li {
+        display: block;
+        width: 70px;
+        margin: 8px 20px;
+    }
+    .menu ul li ul {
+        position: absolute;
+        top: -7px;
+        left: 70px;
+        box-shadow: none;
+        background-color: none;
+    }
+    .menu ul li ul li {
+        display: block;
+        width: 70px;
+        margin: 8px 9px;
+        padding: 3px 0px;
+    }
+    .menu ul li a {
+        padding: 0;
+        font-size: 11px;
+        font-weight: 600;
+        color: gray;
+    }
+    .menu ul li ul li a {
+        padding:0px;
+        font-size: 11px;
+        font-weight: 600;
+        color: gray;
+    }
+}
+
+@media (max-width:732px) {
+    .menu {
+        text-align: left;
+    }
+    .banner{
+        padding: 85px 0px;
+    }
+    .banner-div p {
+        font-size: 15px;
+    }
+    .banner-div b {
+        font-size: 30px;
+    }
+    .video-div iframe{
+        height:290px;
+    }
+    .service-div {
+        width: 90%;
+        margin: 20px auto;
+    }
+    .team-mamber {
+        width: 40%;
+        margin: 20px 15pxpx;
+    }
+    .contect-content {
+        display: block;
+    }
+    .contect-l {
+        width: 100%;
+        text-align: center;
+    }
+    .map-div iframe {
+        width: 100%;
+        height: 400px;
+    }
+    .contect-r {
+        width: 100%;
+        text-align: center;
+        padding-left: 0px;
+        margin-top: 30px;
+    }
+}
+
+@media (max-width:656px) {
+    .menu {
+        padding-top: 5px;
+    }
+    .frist-ul {
+        padding-bottom: 160px;
+    }
+    .mobile-bars {
+        position: absolute;
+        left: 20px;
+        bottom: -22px;
+    }
+    .mobile-cross {
+        position: absolute;
+        left: 32px;
+        bottom: -1px;
+    }
+    .mobile-checkbox {
+        position: relative;
+        top: 11px;
+        left: 27px;
+    }
+    .video-div iframe{
+        height:260px;
+    }
+    .row2 {
+        display: block;
+    }
+    .blog {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .blog-data {
+        width:100%;
+        padding: 15px 10px;
+    }
+    .team-mamber {
+        width: 100%;
+        margin: 20px 0px;
+    }
+    .m-bio {
+        padding: 15px;
+    }
+    .m-bio p {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width:500px) {
+    .container {
+        width: 80%;
+    }
+    .video-div iframe{
+        height:230px;
+    }
+    .row1 {
+        width: 100%;
+    }
+    .row2 {
+        width: 100%;
+    }
+}
+
+@media (max-width:400px) {
+    .container {
+        width: 80%;
+    }
+    .video-div iframe{
+        height:181px;
+    }
+    .about-right h4 {
+        font-size: 22px;
+    }
+    .about-right p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .service h6 {
+        font-size: 17px;
+    }
+    .using {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .using-top {
+        padding: 20px 20px;
+    }
+    .using-bottom {
+        padding: 15px 20px;
+    }
+    .sub-data {
+        width: 90%;
+    }
+    .sub-submit {
+        width: 100%;
+        margin-top: 25px;
+    }
+    .tc-div {
+        width: 80%;
+    }
+    .row1-l h5 {
+        font-size: 22px;
+    }
+    .row1-r {
+        padding-bottom: 0px;
+    }
+    .row1-r p {
+        font-size: 15px;
+        line-height:25px;
+    }
+    .row2 {
+        padding: 0px 0px;
+    }
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:348px) {
+    .container{
+        width:85%;
+    }
+    .banner a {
+        padding: 7px 10px;
+        margin: 10px 5px;
+        width: 60%;
+    }
+    .banner a span {
+        font-size: 20px;
+    }
+    .banner a b {
+        position: relative;
+        top: -2px;
+        font-size: 15px;
+    }
+    .banner-div b {
+        font-size: 25px;
+        padding: 15px 0px;
+    }
+    .banner-div p {
+        font-size: 13px;
+    }
+    .about {
+        padding: 20px 0px;
+    }
+    .video-div iframe{
+        height:170px;
+    }
+    .service-section {
+        padding: 20px 0px;
+    }
+    .service-div {
+        width: 85%;
+    }
+    .tc-div {
+        width: 95%;
+        margin: 20px auto;
+    }
+    .using-section {
+        padding: 20px 0px;
+    }
+    .team-section {
+        padding: 20px 0px;
+    }
+    .sub-div {
+        padding: 20px 0px;
+    }
+    .blog-section {
+        padding: 20px 0px;
+    }
+    .blog-data {
+        padding: 15px 5px;
+    }
+    .tc-section {
+        padding: 20px 0px;
+    }
+    .contect-section {
+        padding: 20px 0px;
+    }
+    .section-header h4 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .row1-l h5 {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .row1-r p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .tc-comment p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .contect-r b {
+        font-size: 22px;
+        font-weight: 500;
+    }
+    .contect-r p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
